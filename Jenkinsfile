@@ -1,10 +1,11 @@
 pipeline {
-  agent any
-  stages {
-     stage('Run Python'){
-        steps {
-          sh 'p1.py'
+    agent any
+
+    stages {
+        stage('Run Python') {
+            steps {
+                sh 'python3 p1.py'
+            }
         }
-      }
     }
-  }
+}
